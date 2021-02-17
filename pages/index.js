@@ -29,6 +29,16 @@ export default function Home() {
           <ButtonNeomorphism>Neomorphism</ButtonNeomorphism>
         </Grid>
       </main>
+      <Footer>
+        &copy; Rebecca Frey {new Date().getFullYear()}{" "}
+        <a
+          href="https://soulcoding.de/"
+          rel="noreferrer"
+          title="my personal website - come and visit!"
+        >
+          @soulcoding.de
+        </a>
+      </Footer>
     </Container>
   );
 }
@@ -40,6 +50,14 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--dark);
+`;
+
+const Footer = styled.footer`
+  font-size: 12px;
+  height: 48px;
+  padding: 16px 3%;
+  position: sticky;
+  text-align: center;
 `;
 
 const Grid = styled.div`
