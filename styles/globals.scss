@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600&display=swap");
+
+:root {
+  --white: rgba(255, 255, 250);
+  --black: rgba(0, 0, 0);
+  --dark: rgba(68, 69, 69);
+  --brown: rgba(123, 114, 99);
+  --pink: rgba(244, 214, 204);
+  --green: rgba(172, 191, 164);
+
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--white);
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  text-transform: uppercase;
+  margin: 8px;
+  height: 48px;
+  width: 200px;
+  text-align: center;
+  cursor: default;
+
+  @media (hover: hover) and (pointer: fine) {
+    cursor: pointer;
+  }
+}
+
+main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
